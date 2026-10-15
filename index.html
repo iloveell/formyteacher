@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f8">
+  <meta name="description" content="A little interactive apology letter for a wonderful English teacher.">
+  <title>Oops, Teacher! 💌</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="floating-layer" id="floatingLayer" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Oops Teacher home">
+      <span class="brand-icon">♡</span>
+      <span>oops, teacher!</span>
+    </a>
+    <div class="topbar-actions">
+      <span class="tiny-note">a little message from your student</span>
+      <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle background music" title="Play or pause music">
+        <span id="musicToggleIcon">♫</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="screen hero active" id="home" aria-labelledby="heroTitle">
+      <div class="hero-sparkle sparkle-a">✦</div>
+      <div class="hero-sparkle sparkle-b">✧</div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A tiny letter, a big sorry</p>
+        <h1 id="heroTitle">Dear English<br><span>Teacher...</span></h1>
+        <p class="hero-subtitle">I have something to say, and it comes straight from my heart. 🥹</p>
+        <button class="button button-primary" id="openLetter" type="button">
+          Open my little message <span aria-hidden="true">💌</span>
+        </button>
+        <p class="micro-copy">Psst... there's a little surprise inside.</p>
+      </div>
+      <div class="hero-art" aria-label="Cute illustrated cat holding an envelope">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <span class="hero-star star-one">✦</span>
+        <span class="hero-star star-two">✧</span>
+        <div class="cat-illustration" role="img" aria-label="A cute cat holding a letter">
+          <div class="cat-ear ear-left"></div>
+          <div class="cat-ear ear-right"></div>
+          <div class="cat-head">
+            <span class="cat-patch"></span>
+            <span class="cat-eye eye-left"></span>
+            <span class="cat-eye eye-right"></span>
+            <span class="cat-blush blush-left"></span>
+            <span class="cat-blush blush-right"></span>
+            <span class="cat-mouth">⌣</span>
+            <span class="whisker whisker-left"></span>
+            <span class="whisker whisker-right"></span>
+          </div>
+          <div class="cat-body"></div>
+          <div class="cat-paw paw-left"></div>
+          <div class="cat-paw paw-right"></div>
+          <div class="envelope">♡</div>
+        </div>
+        <span class="floating-heart heart-one">♥</span>
+        <span class="floating-heart heart-two">♡</span>
+        <div class="speech-bubble">I'm sorry!<br>🥺</div>
+      </div>
+      <div class="scroll-hint"><span></span> A little note awaits</div>
+    </section>
+
+    <section class="screen letter-section" id="letter" aria-labelledby="letterTitle">
+      <div class="section-heading">
+        <p class="eyebrow">chapter 01 · from me to you</p>
+        <h2 id="letterTitle">A letter from my heart <span>💗</span></h2>
+        <p>Some words are easier to write when they come with a little courage.</p>
+      </div>
+      <article class="letter-card">
+        <div class="letter-tape"></div>
+        <div class="letter-decoration decoration-cat" aria-hidden="true">🐱</div>
+        <div class="letter-decoration decoration-flower" aria-hidden="true">🌷</div>
+        <p class="letter-greeting">Dear Teacher,</p>
+        <p class="letter-body">
+          I'm really sorry for what happened. I understand that my actions may have disappointed you, and I take responsibility for them.
+        </p>
+        <p class="letter-body">
+          I know I should have done better. Thank you for teaching me and being patient with me. I'll learn from this mistake and try to make better choices next time.
+        </p>
+        <p class="letter-body">
+          I hope you can accept my sincere apology. I may not always get everything right, but I truly want to improve.
+        </p>
+        <div class="letter-signoff">
+          <span>With a sincere apology,</span>
+          <strong>Your student <span class="signature-heart">♡</span></strong>
+        </div>
+        <div class="letter-stamp">SORRY<br><span>with love</span></div>
+      </article>
+      <p class="translation-note"><strong>Artinya:</strong> Saya benar-benar minta maaf atas apa yang terjadi. Saya memahami bahwa tindakan saya mungkin membuat Ibu/Bapak kecewa, dan saya bertanggung jawab atas tindakan tersebut. Saya akan belajar dari kesalahan ini dan berusaha mengambil keputusan yang lebih baik.</p>
+      <button class="button button-secondary next-button" data-next="humor" type="button">Okay... one tiny joke? <span>→</span></button>
+    </section>
+
+    <section class="screen humor-section" id="humor" aria-labelledby="humorTitle">
+      <div class="section-heading">
+        <p class="eyebrow">chapter 02 · a little student humor</p>
+        <h2 id="humorTitle">My brain.exe has<br><span>stopped working.</span> 🫠</h2>
+        <p>Sometimes my brain chooses the wrong dialogue option.</p>
+      </div>
+      <div class="humor-card">
+        <div class="laptop-cat" aria-hidden="true">
+          <div class="mini-cat-ears"><i></i><i></i></div>
+          <div class="mini-cat-face"><i class="mini-eye eye-a"></i><i class="mini-eye eye-b"></i><span>ᴗ</span></div>
+          <div class="laptop-screen"><span>404</span><small>good decision<br>not found</small></div>
+          <div class="laptop-base"></div>
+          <span class="question-mark">?</span>
+          <span class="oops-tag">oops!</span>
+        </div>
+        <div class="humor-quote">
+          <span class="quote-mark">“</span>
+          <p>My brain made a bad decision.<br><strong>My heart says SORRY!</strong> 😭</p>
+          <span class="quote-small">Error fixed? Working on it, Teacher!</span>
+        </div>
+      </div>
+      <p class="humor-footnote">Jokes aside, I know that saying sorry matters most when I try to do better. 💐</p>
+      <button class="button button-primary next-button" data-next="choice" type="button">One last little thing <span>♡</span></button>
+    </section>
+
+    <section class="screen choice-section" id="choice" aria-labelledby="choiceTitle">
+      <div class="section-heading">
+        <p class="eyebrow">chapter 03 · your little moment</p>
+        <h2 id="choiceTitle">Choose your vibe <span>🌸</span></h2>
+        <p>Pick a little message. No pressure, just a tiny smile.</p>
+      </div>
+      <div class="choice-grid">
+        <button class="choice-card choice-pink" data-message="Thank you for giving me a chance to learn and grow. 💗" type="button">
+          <span class="choice-emoji">🐱</span>
+          <span class="choice-title">It's okay, little human!</span>
+          <span class="choice-subtitle">A warm little hug</span>
+          <span class="choice-arrow">↗</span>
+        </button>
+        <button class="choice-card choice-purple" data-message="Thank you for reading my apology. I really appreciate your time. 🌷" type="button">
+          <span class="choice-emoji">💌</span>
+          <span class="choice-title">Apology received</span>
+          <span class="choice-subtitle">A note full of kindness</span>
+          <span class="choice-arrow">↗</span>
+        </button>
+        <button class="choice-card choice-blue" data-message="I'll keep learning and do my best to make better choices. ⭐" type="button">
+          <span class="choice-emoji">✨</span>
+          <span class="choice-title">A second chance</span>
+          <span class="choice-subtitle">A fresh little start</span>
+          <span class="choice-arrow">↗</span>
+        </button>
+      </div>
+      <div class="response-message" id="responseMessage" role="status" aria-live="polite">
+        <span class="response-icon">♡</span>
+        <p>Choose any card to reveal a little message.</p>
+      </div>
+      <p class="choice-note">These are just playful buttons for the website. Your teacher can respond however they feel comfortable.</p>
+      <button class="button button-secondary next-button" data-next="music" type="button">Play our little soundtrack <span>♫</span></button>
+    </section>
+
+    <section class="screen music-section" id="music" aria-labelledby="musicTitle">
+      <div class="section-heading">
+        <p class="eyebrow">chapter 04 · press play</p>
+        <h2 id="musicTitle">A little soundtrack <span>🎧</span></h2>
+        <p>Add a song that makes this little apology feel like you.</p>
+      </div>
+      <div class="music-card">
+        <div class="record-wrap">
+          <div class="record" id="record">
+            <div class="record-label"><span>♡</span><small>for teacher</small></div>
+          </div>
+          <div class="music-spark spark-left">✦</div>
+          <div class="music-spark spark-right">♫</div>
+        </div>
+        <div class="music-info">
+          <p class="music-overline">NOW PLAYING · YOUR PICK</p>
+          <h3 id="trackTitle">A song for my teacher</h3>
+          <p id="trackArtist">Your chosen soundtrack</p>
+          <div class="progress-track" id="progressTrack" aria-label="Music progress">
+            <span id="progressBar"></span>
+          </div>
+          <div class="time-row"><span id="currentTime">0:00</span><span id="duration">0:00</span></div>
+          <div class="player-controls">
+            <button class="player-button" id="restartMusic" type="button" aria-label="Restart music" title="Restart">↺</button>
+            <button class="player-button player-main" id="playMusic" type="button" aria-label="Play music"><span id="playIcon">▶</span></button>
+            <button class="player-button" id="stopMusic" type="button" aria-label="Stop music" title="Stop">■</button>
+          </div>
+          <label class="volume-label" for="volume">Volume <span>♪</span></label>
+          <input id="volume" type="range" min="0" max="1" step="0.01" value="0.65">
+          <p class="music-hint" id="musicHint">Place your own MP3 file in assets/music/ and name it apology-song.mp3.</p>
+        </div>
+      </div>
+      <div class="music-footer-note"><span>♡</span> Music starts when you press play. The browser may block autoplay, so the controls are always here.</div>
+      <button class="button button-primary next-button" data-next="ending" type="button">Go to my final message <span>→</span></button>
+    </section>
+
+    <section class="screen ending-section" id="ending" aria-labelledby="endingTitle">
+      <div class="ending-frame">
+        <div class="ending-flower flower-left" aria-hidden="true">🌷</div>
+        <div class="ending-flower flower-right" aria-hidden="true">🌼</div>
+        <div class="ending-stars" aria-hidden="true">✦　♡　✧　♡　✦</div>
+        <div class="ending-cat" aria-hidden="true">🐱</div>
+        <p class="eyebrow">one last thing...</p>
+        <h2 id="endingTitle">Thank you for<br>your patience, <span>Teacher.</span> 💗</h2>
+        <p class="ending-message">I'll do my best to learn from this, grow, and make better choices. Thank you for helping me become a better student.</p>
+        <div class="ending-divider"><span>♡</span></div>
+        <p class="ending-signoff">With love and a sincere apology,</p>
+        <p class="student-name" id="studentName">Maulidta Yuwanda Fronika</p>
+        <p class="ending-caption">Made with sincerity, a little nervousness, and lots of apologies.</p>
+        <button class="button button-secondary" id="startOver" type="button">Read it again ↺</button>
+      </div>
+      <footer class="page-footer">A small website made with a sincere heart. <span>♡</span></footer>
+    </section>
+  </main>
+
+  <nav class="progress-nav" aria-label="Website sections">
+    <button class="progress-dot active" data-go="home" type="button" aria-label="Go to opening"></button>
+    <button class="progress-dot" data-go="letter" type="button" aria-label="Go to letter"></button>
+    <button class="progress-dot" data-go="humor" type="button" aria-label="Go to humor"></button>
+    <button class="progress-dot" data-go="choice" type="button" aria-label="Go to choices"></button>
+    <button class="progress-dot" data-go="music" type="button" aria-label="Go to music"></button>
+    <button class="progress-dot" data-go="ending" type="button" aria-label="Go to ending"></button>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Replace assets/music/apology-song.mp3 with your own audio file. -->
+  <audio id="backgroundMusic" preload="metadata" loop>
+    <source src="assets/music/apology-song.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
